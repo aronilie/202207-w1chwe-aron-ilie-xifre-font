@@ -1,0 +1,25 @@
+{
+  "name": "weekend-challenge-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aronilie/202207-w1chwe-aron-ilie-xifre-font.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aronilie/202207-w1chwe-aron-ilie-xifre-font/issues"
+  },
+  "homepage": "https://github.com/aronilie/202207-w1chwe-aron-ilie-xifre-font#readme",
+  "devDependencies": {
+    "husky": "^8.0.1",
+    "sass": "^1.53.0"
+  }
+}
