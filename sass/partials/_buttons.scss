@@ -1,0 +1,11 @@
+@use "../mixins/buttons";
+@use "../variables/colors";
+
+.form {
+  &__button {
+    @include buttons.solid-button(
+      colors.$background-color,
+      colors.$highlighted-content-color
+    );
+  }
+}

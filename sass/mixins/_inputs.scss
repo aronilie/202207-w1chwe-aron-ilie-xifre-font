@@ -1,0 +1,9 @@
+@use "../variables/colors";
+
+@mixin inputs($width) {
+  flex: $width;
+  padding: 0.87em;
+  background-color: colors.$background-color;
+  border: 2px solid colors.$typography-color;
+  border-radius: 1em;
+}
