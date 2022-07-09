@@ -39,3 +39,9 @@
   padding: 1.7em 0 1.7em 0;
   @include separator.separator();
 }
+
+.deal-search {
+  @media (min-width: breakpoints.$desktop) {
+    display: flex;
+  }
+}
