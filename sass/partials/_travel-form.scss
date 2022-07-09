@@ -18,21 +18,42 @@
 .travel-form {
   display: flex;
   flex-direction: column;
-  align-items: stretch;
   padding: 2.2em;
 
   &__input {
     height: 4em;
     border-radius: 1em;
     border: none;
-    margin-bottom: 1em;
+    max-width: 100%;
+    min-width: 0;
 
     &--travellers {
       margin-bottom: 2em;
     }
   }
 
+  &__entire-input {
+    background-color: #fff;
+    border-radius: 1em;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+  }
+
+  &__input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+
+  &__icon {
+    margin-left: 1em;
+  }
+
   &__title {
     color: #fff;
   }
+}
+
+input::placeholder {
+  color: #000000;
+  margin-left: 5em;
 }

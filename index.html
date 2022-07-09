@@ -68,19 +68,31 @@
             class="travel-form__title travel-form__title--destination"
             >Destination/property name</label
           >
-          <input
-            type="text"
-            id="destination"
-            class="travel-form__input travel-form__input--destination"
-          />
-          <div></div>
+
+          <div class="travel-form__entire-input">
+            <img
+              class="travel-form__icon travel-form__icon--search"
+              src="images/Search.png"
+              alt="search icon"
+            />
+            <input
+              type="text"
+              id="destination"
+              class="travel-form__input travel-form__input--destination"
+              placeholder="Hola"
+            />
+            <img src="images/Forward.png" alt="Forward icon" />
+          </div>
           <label
             for="check-in-date"
             class="travel-form__title travel-form__title--check-in-date"
-            >Check-in date</label
+            ><img
+              class="travel-form__icon travel-form__icon--search"
+              src="images/Search.png"
+              alt="search icon"
+            />Check-in date</label
           >
           <input
-            type="date"
             id="check-in-date"
             class="travel-form__input travel-form__input--check-in-date"
           />
@@ -91,7 +103,6 @@
             >Check-out date</label
           >
           <input
-            type="date"
             id="check-out-date"
             class="travel-form__input travel-form__input--check-out-date"
           />
