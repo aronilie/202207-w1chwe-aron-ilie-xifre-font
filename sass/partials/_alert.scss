@@ -1,0 +1,30 @@
+@use "../variables/colors";
+@use "../mixins/alerts";
+
+.alert {
+  &__benefit {
+    @include alerts.alert(
+      colors.$benefit-alert-color,
+      colors.$benefit-alert-background-color
+    );
+    padding: 1em 0;
+  }
+
+  &__detriment {
+    @include alerts.alert(
+      colors.$detriment-alert-color,
+      colors.$detriment-alert-background-color
+    );
+    padding: 1em 0;
+  }
+
+  &__icon {
+    color: colors.$typography-color;
+    margin: 1em;
+    font-size: 1.7em;
+
+    &--special {
+      align-self: flex-start;
+    }
+  }
+}
