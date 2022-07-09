@@ -1,4 +1,5 @@
 @use "../variables/colors";
+@use "../variables/breakpoints";
 
 .load-page__icon {
   border-radius: 50%;
@@ -21,4 +22,7 @@
   margin-top: -7%;
   margin-left: auto;
   margin-right: auto;
+  @media (min-width: breakpoints.$desktop) {
+    display: none;
+  }
 }
