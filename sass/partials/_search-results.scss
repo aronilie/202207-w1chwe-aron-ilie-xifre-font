@@ -4,6 +4,7 @@
 @use "../mixins/rating-stars";
 @use "../mixins/buttons";
 @use "../partials/rating-stars-display";
+@use "../partials/load-page-bar";
 
 .search-results {
   overflow: hidden;
@@ -60,6 +61,18 @@
         right: 0;
       }
     }
+
     @include separator.separator();
+  }
+
+  &__load-page {
+    display: flex;
+    justify-content: center;
+  }
+
+  @media (min-width: breakpoints.$desktop) {
+    &__load-page {
+      display: none;
+    }
   }
 }
