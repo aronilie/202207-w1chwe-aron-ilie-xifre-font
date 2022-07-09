@@ -43,6 +43,10 @@
     -webkit-appearance: none;
   }
 
+  &__input:focus {
+    outline: none;
+  }
+
   &__icon {
     margin-left: 1em;
   }

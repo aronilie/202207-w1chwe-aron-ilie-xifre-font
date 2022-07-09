@@ -1,0 +1,24 @@
+@use "../variables/colors";
+@use "../mixins/alerts";
+
+.alert {
+  &__benefit {
+    @include alerts.alert(
+      colors.$benefit-alert-color,
+      colors.$benefit-alert-background-color
+    );
+  }
+
+  &__detriment {
+    @include alerts.alert(
+      colors.$detriment-alert-color,
+      colors.$detriment-alert-background-color
+    );
+  }
+
+  &__icon {
+    color: colors.$typography-color;
+    margin: 2em;
+    font-size: 1.1em;
+  }
+}

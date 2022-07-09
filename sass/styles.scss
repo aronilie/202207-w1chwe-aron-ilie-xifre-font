@@ -8,6 +8,8 @@
 @use "./partials/search-results";
 @use "./partials/burger-menu";
 @use "./partials/advertisement";
+@use "./mixins/alerts";
+@use "./partials/alert";
 
 .main-container {
   margin-top: 251px;
