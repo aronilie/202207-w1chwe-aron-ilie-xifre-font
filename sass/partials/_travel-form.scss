@@ -26,10 +26,7 @@
     border: none;
     max-width: 100%;
     min-width: 0;
-
-    &--travellers {
-      margin-bottom: 2em;
-    }
+    width: 100%;
   }
 
   &__entire-input {
@@ -37,7 +34,9 @@
     border-radius: 1em;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 1em;
+    margin-bottom: 1em;
   }
 
   &__input::-webkit-inner-spin-button {
@@ -46,6 +45,15 @@
 
   &__icon {
     margin-left: 1em;
+  }
+
+  &__dropdown {
+    margin-right: 1.5em;
+  }
+
+  &__button {
+    padding: 1.25em;
+    margin-top: 1em;
   }
 
   &__title {
