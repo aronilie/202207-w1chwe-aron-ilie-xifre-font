@@ -1,6 +1,7 @@
 @use "../variables/colors";
 @use "../mixins/inputs";
 @use "../mixins/separator";
+@use "../variables/breakpoints";
 
 .deal-form {
   display: flex;
@@ -11,7 +12,7 @@
     @include inputs.inputs(1);
   }
 
-  @media (min-width: 861px) {
+  @media (min-width: breakpoints.$desktop) {
     flex-direction: row;
     gap: 0.62em;
 

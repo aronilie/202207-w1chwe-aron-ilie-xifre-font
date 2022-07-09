@@ -1,8 +1,10 @@
+@use "./partials/reset";
 @use "./variables/colors";
 @use "./partials/fonts";
 @use "./partials/header";
 @use "./partials/deals-form";
 @use "./partials/buttons";
+@use "./partials/search-results";
 
 .main-container {
   margin-top: 250px;
