@@ -2,6 +2,7 @@
 @use "../variables/breakpoints";
 @use "../mixins/separator";
 @use "../mixins/rating-stars";
+@use "../mixins/buttons";
 @use "../partials/rating-stars-display";
 
 .search-results {
@@ -32,6 +33,10 @@
     &__location-icon {
       font-size: 1.5em;
       margin-right: 0.5em;
+      -webkit-text-stroke-width: 1px;
+    }
+    &__button {
+      @include buttons.outline-button(colors.$primary-color);
     }
     @media (min-width: breakpoints.$desktop) {
       display: flex;
@@ -46,6 +51,11 @@
 
       &__stars {
         font-size: 1.3em;
+      }
+      &__button {
+        @include buttons.outline-button(colors.$primary-color);
+        position: absolute;
+        right: 0;
       }
     }
     @include separator.separator();
