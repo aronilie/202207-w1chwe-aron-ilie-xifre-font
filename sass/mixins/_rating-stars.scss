@@ -1,0 +1,16 @@
+@mixin star-list($color, $dimension) {
+  list-style: none;
+  display: flex;
+  gap: 0.5em;
+  font-size: $dimension;
+  color: $color;
+}
+
+@mixin star-rating($stars) {
+  content: "";
+  position: absolute;
+  right: 0;
+  height: 1.3em;
+  width: calc($stars * 18%);
+  background-color: rgba(255, 255, 255, 0.8);
+}

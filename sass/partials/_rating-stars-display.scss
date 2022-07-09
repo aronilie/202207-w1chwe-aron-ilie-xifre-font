@@ -1,0 +1,17 @@
+@use "../mixins/rating-stars";
+
+.first-result .search-result__stars::before {
+  @include rating-stars.star-rating(1.6);
+}
+
+.second-result .search-result__stars::before {
+  @include rating-stars.star-rating(2);
+}
+
+.third-result .search-result__stars::before {
+  @include rating-stars.star-rating(4);
+}
+
+.fourth-result .search-result__stars::before {
+  @include rating-stars.star-rating(0);
+}

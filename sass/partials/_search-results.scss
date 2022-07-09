@@ -1,34 +1,28 @@
 @use "../variables/colors";
 @use "../variables/breakpoints";
 @use "../mixins/separator";
+@use "../mixins/rating-stars";
+@use "../partials/rating-stars-display";
 
 .search-results {
   overflow: hidden;
+
   .search-result {
+    padding: 2.25em 0 2.25em 0;
     &__images {
       list-style: none;
       display: flex;
       gap: 1.25em;
     }
     &__stars {
-      list-style: none;
-      display: flex;
-      gap: 0.5em;
-      color: colors.$highlighted-content-color;
-    }
-    &__stars::before {
-      content: "";
-      position: absolute;
-      right: 0;
-      height: 1.3em;
-      width: 10%;
-      background-color: rgba(255, 255, 255, 0.8);
+      @include rating-stars.star-list(colors.$highlighted-content-color, 1em);
     }
     &__title {
       color: colors.$primary-color;
       font-size: 1.5em;
       font-weight: 700;
     }
+
     &__map-link {
       color: colors.$primary-color;
       text-decoration: none;
@@ -54,6 +48,6 @@
         font-size: 1.3em;
       }
     }
+    @include separator.separator();
   }
-  @include separator.separator();
 }
