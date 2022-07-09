@@ -1,0 +1,25 @@
+@use "../variables/colors";
+@use "../mixins/burger-menu-bars";
+
+.header__navigation {
+  position: relative;
+  cursor: pointer;
+}
+
+.navigation__icon {
+  @include burger-menu-bars.bars(colors.$primary-color);
+}
+
+.navigation__icon::before {
+  content: "";
+  position: absolute;
+  top: 8;
+  @include burger-menu-bars.bars(colors.$primary-color);
+}
+
+.navigation__icon::after {
+  content: "";
+  position: absolute;
+  bottom: 8;
+  @include burger-menu-bars.bars(colors.$primary-color);
+}
