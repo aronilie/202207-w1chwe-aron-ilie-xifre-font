@@ -1,0 +1,67 @@
+@use "../variables/colors";
+@use "../mixins/inputs";
+@use "../mixins/separator";
+
+.travel-search {
+  background-color: colors.$primary-color;
+  border-radius: 2em;
+  margin-top: 2.7em;
+
+  &__title {
+    margin: 0;
+    color: #fff;
+    font-size: 2em;
+    padding: 1em 0 0 1.2em;
+  }
+}
+
+.travel-form {
+  display: flex;
+  flex-direction: column;
+  padding: 2.2em;
+
+  &__input {
+    height: 4em;
+    border-radius: 1em;
+    border: none;
+    max-width: 100%;
+    min-width: 0;
+    width: 100%;
+  }
+
+  &__entire-input {
+    background-color: #fff;
+    border-radius: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+    margin-bottom: 1em;
+  }
+
+  &__input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+
+  &__icon {
+    margin-left: 1em;
+  }
+
+  &__dropdown {
+    margin-right: 1.5em;
+  }
+
+  &__button {
+    padding: 1.25em;
+    margin-top: 1em;
+  }
+
+  &__title {
+    color: #fff;
+  }
+}
+
+input::placeholder {
+  color: #000000;
+  margin-left: 5em;
+}
