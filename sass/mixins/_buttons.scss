@@ -1,0 +1,7 @@
+@mixin solid-button($color, $background-color) {
+  background-color: $background-color;
+  color: $color;
+  border-radius: 2.5em;
+  border: none;
+  padding: 0.87em;
+}

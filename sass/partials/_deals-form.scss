@@ -1,0 +1,40 @@
+@use "../variables/colors";
+@use "../mixins/inputs";
+@use "../mixins/separator";
+
+.deal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.56em;
+
+  &__input {
+    @include inputs.inputs(1);
+  }
+
+  @media (min-width: 861px) {
+    flex-direction: row;
+    gap: 0.62em;
+
+    .deal-form__input {
+      &--destination {
+        @include inputs.inputs(4);
+      }
+      &--dates {
+        @include inputs.inputs(2);
+      }
+      &--guests {
+        @include inputs.inputs(2);
+      }
+    }
+  }
+}
+.form {
+  &__button {
+    flex: 1;
+  }
+}
+
+.deal-finder {
+  padding: 1.7em 0 1.7em 0;
+  @include separator.separator();
+}
