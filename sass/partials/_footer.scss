@@ -1,0 +1,57 @@
+@use "../variables/colors";
+@use "../variables/breakpoints";
+
+.footer {
+  margin-top: 2.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 5.6em;
+
+  ul {
+    list-style: none;
+  }
+
+  &__title {
+    color: colors.$primary-color;
+  }
+
+  &__description {
+    flex: 1.7;
+  }
+
+  &__services,
+  &__continents {
+    display: none;
+  }
+
+  @media (min-width: breakpoints.$desktop) {
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+    h4 {
+      margin-bottom: 1em;
+    }
+    &__copyright {
+      font-weight: bold;
+    }
+    &__services,
+    &__continents {
+      display: block;
+      flex: 1;
+      gap: 2em;
+
+      li {
+        margin-bottom: 1em;
+      }
+    }
+    &__contact {
+      flex: 1;
+      .contact-list__maill {
+        color: colors.$primary-color;
+      }
+    }
+  }
+}
