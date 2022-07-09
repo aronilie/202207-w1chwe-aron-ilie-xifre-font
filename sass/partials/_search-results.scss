@@ -1,0 +1,59 @@
+@use "../variables/colors";
+@use "../variables/breakpoints";
+@use "../mixins/separator";
+
+.search-results {
+  overflow: hidden;
+  .search-result {
+    &__images {
+      list-style: none;
+      display: flex;
+      gap: 1.25em;
+    }
+    &__stars {
+      list-style: none;
+      display: flex;
+      gap: 0.5em;
+      color: colors.$highlighted-content-color;
+    }
+    &__stars::before {
+      content: "";
+      position: absolute;
+      right: 0;
+      height: 1.3em;
+      width: 10%;
+      background-color: rgba(255, 255, 255, 0.8);
+    }
+    &__title {
+      color: colors.$primary-color;
+      font-size: 1.5em;
+      font-weight: 700;
+    }
+    &__map-link {
+      color: colors.$primary-color;
+      text-decoration: none;
+      font-size: 1.3em;
+      font-weight: 600;
+    }
+    &__location-icon {
+      font-size: 1.5em;
+      margin-right: 0.5em;
+    }
+    @media (min-width: breakpoints.$desktop) {
+      display: flex;
+
+      &__right-column {
+        padding-left: 2.2em;
+      }
+
+      &__images :not(:nth-child(1)) {
+        display: none;
+      }
+
+      &__stars {
+        font-size: 1.3em;
+      }
+    }
+  }
+  @include separator.separator();
+}
