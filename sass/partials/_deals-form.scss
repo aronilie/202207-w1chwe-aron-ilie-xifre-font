@@ -1,5 +1,6 @@
 @use "../variables/colors";
 @use "../mixins/inputs";
+@use "../mixins/separator";
 
 .deal-form {
   display: flex;
@@ -24,9 +25,16 @@
       &--guests {
         @include inputs.inputs(2);
       }
-      &__submit {
-        flex: 1;
-      }
     }
   }
+}
+.form {
+  &__button {
+    flex: 1;
+  }
+}
+
+.deal-finder {
+  padding: 1.7em 0 1.7em 0;
+  @include separator.separator();
 }
