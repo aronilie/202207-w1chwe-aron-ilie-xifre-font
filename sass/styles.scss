@@ -1,9 +1,12 @@
+@use "./partials/reset";
 @use "./variables/colors";
 @use "./partials/fonts";
 @use "./partials/header";
 @use "./partials/deals-form";
 @use "./partials/buttons";
 @use "./partials/travel-form";
+@use "./partials/search-results";
+@use "./partials/burger-menu";
 
 .main-container {
   margin-top: 250px;
