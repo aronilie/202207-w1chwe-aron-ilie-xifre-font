@@ -1,0 +1,32 @@
+@use "../variables/colors";
+@use "../mixins/inputs";
+
+.deal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.56em;
+
+  &__input {
+    @include inputs.inputs(1);
+  }
+
+  @media (min-width: 861px) {
+    flex-direction: row;
+    gap: 0.62em;
+
+    .deal-form__input {
+      &--destination {
+        @include inputs.inputs(4);
+      }
+      &--dates {
+        @include inputs.inputs(2);
+      }
+      &--guests {
+        @include inputs.inputs(2);
+      }
+      &__submit {
+        flex: 1;
+      }
+    }
+  }
+}
