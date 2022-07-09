@@ -8,12 +8,8 @@
 @use "./partials/search-results";
 @use "./partials/burger-menu";
 @use "./partials/advertisement";
-@use "./mixins/alerts";
-@use "./partials/alert";
+@use "./partials/footer";
 
 .main-container {
   margin-top: 251px;
-}
-
-.deal-search {
 }
