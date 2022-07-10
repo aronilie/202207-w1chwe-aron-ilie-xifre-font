@@ -10,6 +10,13 @@
   text-align: center;
   gap: 5.6em;
 
+  p {
+    font-size: 1em;
+    @media (min-width: breakpoints.$desktop) {
+      font-size: 0.85em;
+    }
+  }
+
   ul {
     list-style: none;
   }
@@ -27,15 +34,18 @@
     display: none;
   }
 
+  h4 {
+    margin-bottom: 1em;
+  }
+
   @media (min-width: breakpoints.$desktop) {
     flex-direction: row;
     align-items: flex-start;
     text-align: left;
-    h4 {
-      margin-bottom: 1em;
-    }
+
     &__copyright {
-      font-weight: bold;
+      font-weight: 600;
+      line-height: 2.5em;
     }
     &__services,
     &__continents {
@@ -47,11 +57,23 @@
         margin-bottom: 1em;
       }
     }
+
     &__contact {
       flex: 1;
-      .contact-list__maill {
-        color: colors.$primary-color;
-      }
+    }
+  }
+}
+
+.contact-list {
+  &__mail {
+    color: colors.$primary-color;
+  }
+
+  &__address {
+    padding-left: 5%;
+    padding-right: 5%;
+    @media (min-width: breakpoints.$desktop) {
+      padding: 0 10% 0 0;
     }
   }
 }
