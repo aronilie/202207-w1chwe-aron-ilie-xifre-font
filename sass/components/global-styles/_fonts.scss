@@ -5,11 +5,11 @@ html {
 }
 
 h1 {
-  font-size: 3.4em;
+  font-size: 2.12em;
   font-weight: 700;
 }
 .footer__title {
-  font-size: 3.4em;
+  font-size: 2.12em;
   font-weight: 700;
   @media (min-width: breakpoints.$desktop) {
     font-size: 1.25em;
@@ -19,6 +19,11 @@ h1 {
 h2 {
   font-size: 1.5em;
   font-weight: 700;
+}
+
+h4 {
+  font-size: 1.25em;
+  font-weight: 600;
 }
 
 p {
