@@ -7,6 +7,10 @@
 .search-results {
   overflow: hidden;
 
+  @media (min-width: breakpoints.$desktop) {
+    padding-left: 2.3em;
+  }
+
   .search-result {
     padding: 2.25em 0 2.25em 0;
     &__images {
@@ -66,5 +70,17 @@
   &__load-page {
     display: flex;
     justify-content: center;
+  }
+}
+
+.deal-search {
+  @media (min-width: breakpoints.$desktop) {
+    display: flex;
+    .search-menu {
+      flex: 1;
+    }
+    .search-results {
+      flex: 2;
+    }
   }
 }
