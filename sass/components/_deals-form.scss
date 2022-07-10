@@ -3,6 +3,22 @@
 @use "../mixins/separator";
 @use "../variables/breakpoints";
 
+.deal-finder {
+  margin-top: 37%;
+  padding-bottom: 2em;
+  &__title {
+    margin-bottom: 0.75em;
+    @media (min-width: breakpoints.$desktop) {
+      font-size: 2em;
+    }
+  }
+  @include separator.separator();
+  @media (min-width: breakpoints.$desktop) {
+    margin-top: 14%;
+    padding-bottom: 3em;
+  }
+}
+
 .deal-form {
   display: flex;
   flex-direction: column;
@@ -18,24 +34,25 @@
 
     .deal-form__input {
       &--destination {
-        @include inputs.inputs(4);
+        @include inputs.inputs(3.6);
       }
       &--dates {
-        @include inputs.inputs(2);
+        @include inputs.inputs(2.15);
       }
       &--guests {
-        @include inputs.inputs(2);
+        @include inputs.inputs(2.15);
       }
     }
   }
 }
 .form {
   &__button {
-    flex: 1;
+    flex: 1.1;
   }
 }
 
-.deal-finder {
-  padding: 1.7em 0 1.7em 0;
-  @include separator.separator();
+.deal-search {
+  @media (min-width: breakpoints.$desktop) {
+    display: flex;
+  }
 }
