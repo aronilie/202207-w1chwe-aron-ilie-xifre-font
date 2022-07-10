@@ -33,6 +33,10 @@
       list-style: none;
       display: flex;
       gap: 1.25em;
+      overflow-x: scroll;
+    }
+    &__images::-webkit-scrollbar {
+      display: none;
       margin-bottom: 0.8em;
     }
     &__stars {
