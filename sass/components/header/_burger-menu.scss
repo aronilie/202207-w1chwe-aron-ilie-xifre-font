@@ -7,6 +7,8 @@
 }
 
 .navigation__icon {
+
+  z-index: 9999;
   cursor: pointer;
   @include burger-menu-bars.bars(colors.$primary-color);
   transition: 0.4s;

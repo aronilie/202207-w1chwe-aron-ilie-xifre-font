@@ -19,4 +19,11 @@
   &__title {
     color: colors.$primary-color;
   }
+  &__title::after {
+    content: "Travelulu";
+    color: colors.$background-color;
+    z-index: 9999;
+    position: relative;
+    left: 0;
+  }
 }

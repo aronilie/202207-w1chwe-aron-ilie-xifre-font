@@ -7,13 +7,14 @@
 .navigation {
   &__menu {
     position: fixed;
-    top: 100;
+    top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
     background-color: colors.$navigation-color;
     display: flex;
     padding: 2em 0em;
+    padding-top: 100px;
     color: colors.$background-color;
     font-weight: 600;
   }
