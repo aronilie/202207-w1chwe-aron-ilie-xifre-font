@@ -1,378 +1,509 @@
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travelulu</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Travelulu</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
 
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
 
-  <link rel="stylesheet" href="/css/styles.css" />
-</head>
-
-<body>
-  <header class="header">
-    <h1 class="header__title">Travelulu</h1>
-    <nav class="header__navigation">
-      <div class="navigation__icon"></div>
-      <ul class="navigation">
-        <li class="navigation__link">Home</li>
-        <li class="navigation__link navigation__link--unfold">Services
-          <ul>
-            <li class="navigation__sublink">Planning</li>
-            <li class="navigation__sublink">Financing</li>
-            <li class="navigation__sublink">Purchasing</li>
-            <li class="navigation__sublink">Reviewing</li>
-            <li class="navigation__sublink">Flying</li>
-          </ul>
-        </li>
-        <li class="navigation__link navigation__link--unfold">
-          Continents
-          <ul>
-            <li class="navigation__sublink">Coca-cola</li>
-          </ul>
-        </li>
-        <li class="navigation__link">Contact</li>
-        <li class="navigation__link">Privacy</li>
-      </ul>
-    </nav>
-  </header>
-
-  <main class="main-container">
-    <section class="deal-finder">
-      <h2 class="deal-finder__title">
-        Find deals on hotels, homes and much more...
-      </h2>
-      <form class="form deal-form">
-        <input type="text" class="deal-form__input deal-form__input--destination placeholder="
-          placeholder="Where are you going?" />
-        <input type="text" class="deal-form__input deal-form__input--dates" placeholder="Check-in - Check-out" />
-        <input type="text" class="deal-form__input deal-form__input--guests" placeholder="2 adults - 0 children" />
-        <button type="submit" class="button form__button">Search</button>
-      </form>
-    </section>
-    <section class="deal-search">
-      <aside class="search-menu">
-        <section class="travel travel-search">
-          <h2 class="travel-search__title">Search</h2>
-          <form class="form travel-form">
-            <label for="destination" class="travel-form__title travel-form__title--destination">Destination/property
-              name</label>
-            <div class="travel-form__entire-input">
-              <img class="travel-form__icon travel-form__icon--search" src="images/Search.png" alt="search icon" />
-              <input type="text" id="destination" class="travel-form__input travel-form__input--destination"
-                placeholder="Gold Coast" />
-              <img class="travel-form__dropdown" src="images/Forward.png" alt="Forward icon" />
-            </div>
-            <label for="check-in-date" class="travel-form__title travel-form__title--check-in-date">Check-in
-              date</label>
-            <div class="travel-form__entire-input">
-              <img class="travel-form__icon travel-form__icon--search" src="images/Calandar.png" alt="search icon" />
-              <input id="check-in-date" class="travel-form__input travel-form__input--check-in-date"
-                placeholder="Check-in date" />
-              <img class="travel-form__dropdown" src="images/Forward.png" alt="Forward icon" />
-            </div>
-            <label for="check-out-date" class="travel-form__title travel-form__title--check-out-date">Check-out
-              date</label>
-            <div class="travel-form__entire-input">
-              <img class="travel-form__icon travel-form__icon--search" src="images/Calandar.png" alt="search icon" />
-              <input id="check-out-date" class="travel-form__input travel-form__input--check-out-date"
-                placeholder="Check-out date" />
-              <img class="travel-form__dropdown" src="images/Forward.png" alt="Forward icon" />
-            </div>
-            <label for="travellers" class="travel-form__title travel-form__title--travellers">Travellers</label>
-            <div class="travel-form__entire-input">
-              <img class="travel-form__icon travel-form__icon--search" src="images/Profile.png" alt="search icon" />
-              <input type="number" id="travellers" class="travel-form__input travel-form__input--travellers"
-                placeholder="2 adults - 0 children" />
-              <img class="travel-form__dropdown" src="images/Forward.png" alt="Forward icon" />
-            </div>
-            <button type="submit" class="button form__button travel-form__button">
-              Search
-            </button>
-          </form>
-        </section>
-      </aside>
-      <section class="search-results">
-        <h3 class="search-results__title">254 Properties Found</h3>
-        <article class="search-result first-result">
-          <ul class="search-result__images">
-            <li class="search-result__image">
-              <img src="images/house-1.png" alt="Modern looking white house with small garden" />
-            </li>
-            <li class="search-result__image">
-              <img src="images/house-1.png" alt="Modern looking white house with small garden" />
-            </li>
-          </ul>
-          <div class="search-result__right-column">
-            <div style="position: relative; width: fit-content">
-              <ul class="search-result__stars">
-                <li class="search-result__star">
-                  <i class="fa-regular fa-star"></i>
-                </li>
-                <li class="search-result__star">
-                  <i class="fa-regular fa-star"></i>
-                </li>
-                <li class="search-result__star">
-                  <i class="fa-regular fa-star"></i>
-                </li>
-                <li class="search-result__star">
-                  <i class="fa-regular fa-star"></i>
-                </li>
-                <li class="search-result__star">
-                  <i class="fa-regular fa-star"></i>
-                </li>
-              </ul>
-            </div>
-            <h4 class="search-result__title">Estate de la Newcastle</h4>
-            <p class="search-result__location">
-              Newcastle City Centre. Newcastle upon Tyne 0.1km from centre
-            </p>
-            <div>
-              <a href="" class="search-result__map-link"><i
-                  class="fa-solid fa-location-dot search-result__location-icon"></i>Show on map</a>
-            </div>
-            <p class="search-result__description">
-              Situated in Newcastle City Centre, Maldron Hotel features free
-              WiFi and a private court yard.
-            </p>
-          </div>
-          <button class="button search-result__button" type="submit">
-            Make a booking
-          </button>
-        </article>
-
-        <article class="search-result second-result">
-          <ul class="search-result__images">
-            <li class="search-result__image">
-              <img src="images/house-2.png" alt="Modern looking white house with small garden" />
-            </li>
-            <li class="search-result__image">
-              <img src="images/house-1.png" alt="Modern looking white house with small garden" />
-            </li>
-          </ul>
-          <div class="search-result__right-column">
-            <div style="position: relative; width: fit-content">
-              <ul class="search-result__stars">
-                <li class="search-result__star">
-                  <i class="fa-regular fa-star"></i>
-                </li>
-                <li class="search-result__star">
-                  <i class="fa-regular fa-star"></i>
-                </li>
-                <li class="search-result__star">
-                  <i class="fa-regular fa-star"></i>
-                </li>
-                <li class="search-result__star">
-                  <i class="fa-regular fa-star"></i>
-                </li>
-                <li class="search-result__star">
-                  <i class="fa-regular fa-star"></i>
-                </li>
-              </ul>
-            </div>
-            <h4 class="search-result__title">Estate de la Newcastle</h4>
-            <p class="search-result__location">
-              Newcastle City Centre. Newcastle upon Tyne 0.1km from centre
-            </p>
-            <div>
-              <a href="" class="search-result__map-link"><i
-                  class="fa-solid fa-location-dot search-result__location-icon"></i>Show on map</a>
-            </div>
-            <p class="search-result__description">
-              Situated in Newcastle City Centre, Maldron Hotel features free
-              WiFi and a private court yard.
-            </p>
-          </div>
-          <button class="button search-result__button" type="submit">
-            Make a booking
-          </button>
-        </article>
-
-        <article class="search-result third-result">
-          <ul class="search-result__images">
-            <li class="search-result__image">
-              <img src="images/house-3.png" alt="Modern looking white house with small garden" />
-            </li>
-            <li class="search-result__image">
-              <img src="images/house-1.png" alt="Modern looking white house with small garden" />
-            </li>
-          </ul>
-          <div class="search-result__right-column">
-            <div style="position: relative; width: fit-content">
-              <ul class="search-result__stars">
-                <li class="search-result__star">
-                  <i class="fa-regular fa-star"></i>
-                </li>
-                <li class="search-result__star">
-                  <i class="fa-regular fa-star"></i>
-                </li>
-                <li class="search-result__star">
-                  <i class="fa-regular fa-star"></i>
-                </li>
-                <li class="search-result__star">
-                  <i class="fa-regular fa-star"></i>
-                </li>
-                <li class="search-result__star">
-                  <i class="fa-regular fa-star"></i>
-                </li>
-              </ul>
-            </div>
-            <h4 class="search-result__title">Estate de la Newcastle</h4>
-            <p class="search-result__location">
-              Newcastle City Centre. Newcastle upon Tyne 0.1km from centre
-            </p>
-            <div>
-              <a href="" class="search-result__map-link"><i
-                  class="fa-solid fa-location-dot search-result__location-icon"></i>Show on map</a>
-            </div>
-            <p class="search-result__description">
-              Situated in Newcastle City Centre, Maldron Hotel features free
-              WiFi and a private court yard.
-            </p>
-          </div>
-          <button class="button search-result__button" type="submit">
-            Make a booking
-          </button>
-        </article>
-
-        <article class="search-result fourth-result">
-          <ul class="search-result__images">
-            <li class="search-result__image">
-              <img src="images/house-4.png" alt="Modern looking white house with small garden" />
-            </li>
-            <li class="search-result__image">
-              <img src="images/house-1.png" alt="Modern looking white house with small garden" />
-            </li>
-          </ul>
-          <div class="search-result__right-column">
-            <div style="position: relative; width: fit-content">
-              <ul class="search-result__stars">
-                <li class="search-result__star">
-                  <i class="fa-regular fa-star"></i>
-                </li>
-                <li class="search-result__star">
-                  <i class="fa-regular fa-star"></i>
-                </li>
-                <li class="search-result__star">
-                  <i class="fa-regular fa-star"></i>
-                </li>
-                <li class="search-result__star">
-                  <i class="fa-regular fa-star"></i>
-                </li>
-                <li class="search-result__star">
-                  <i class="fa-regular fa-star"></i>
-                </li>
-              </ul>
-            </div>
-            <h4 class="search-result__title">Estate de la Newcastle</h4>
-            <p class="search-result__location">
-              Newcastle City Centre. Newcastle upon Tyne 0.1km from centre
-            </p>
-            <div>
-              <a href="" class="search-result__map-link"><i
-                  class="fa-solid fa-location-dot search-result__location-icon"></i>Show on map</a>
-            </div>
-            <p class="search-result__description">
-              Situated in Newcastle City Centre, Maldron Hotel features free
-              WiFi and a private court yard.
-            </p>
-          </div>
-          <button class="button search-result__button" type="submit">
-            Make a booking
-          </button>
-        </article>
-      </section>
-      <div class="load-page-contain">
-        <div class="search-results__load-page">
-          <i class="fa-solid fa-angle-down load-page__icon"></i>
+  <body>
+    <header class="header">
+      <h1 class="header__title">Travelulu</h1>
+      <nav class="header__navigation">
+        <div class="navigation__icon">
+          <i class="fa-solid fa-angle-right"></i>
         </div>
-      </div>
-    </section>
-    <section class="alert">
-      <div class="alert__benefit">
-        <i class="fa-regular fa-thumbs-up alert__icon alert__icon--special"></i>
-        <p>
-          Lock in a great price for your upcoming stay. Get instant
-          confirmation with FREE cancellation on most rooms!
-        </p>
-        <i class="fa-solid fa-xmark alert__icon"></i>
-      </div>
-      <div class="alert__detriment">
-        <i class="fa-solid fa-exclamation alert__icon alert__icon--special"></i>
-        <p>
-          From 6 April 2022, your chosen cancellation policy will aply,
-          regardless of Coronavirus. We recommend booking a free cancellation
-          option in case your travel plans need to change.
-        </p>
-        <i class="fa-solid fa-xmark alert__icon"></i>
-      </div>
-    </section>
-    <section class="advertisement">
-      <p class="advertisement__title">
-        Need more information to get started?
-      </p>
-      <a href="" class="button advertisement__button">Contact us</a>
-    </section>
-  </main>
+        <ul class="navigation">
+          <li class="navigation__link">Home</li>
+          <li class="navigation__link navigation__link--unfold">
+            Services
+            <ul>
+              <li class="navigation__sublink">Planning</li>
+              <li class="navigation__sublink">Financing</li>
+              <li class="navigation__sublink">Purchasing</li>
+              <li class="navigation__sublink">Reviewing</li>
+              <li class="navigation__sublink">Flying</li>
+            </ul>
+          </li>
+          <li class="navigation__link navigation__link--unfold">
+            Continents
+            <ul>
+              <li class="navigation__sublink">Coca-cola</li>
+            </ul>
+          </li>
+          <li class="navigation__link">Contact</li>
+          <li class="navigation__link">Privacy</li>
+        </ul>
+      </nav>
+    </header>
 
-  <footer class="footer">
-    <div class="footer__description">
-      <h3 class="footer__title">Travelulu</h3>
-      <p class="footer__description-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et minima error
-        repellat soluta voluptate, voluptas enim explicabo blanditiis, vel eligendi eaque recusandae reiciendis fuga id
-        voluptatibus eius quam aperiam autem?</p>
-      <span class="footer__copyright">Copyright 2021. All rigthts reserved.</span>
-    </div>
-    <div class="footer__services">
-      <h4 class="services__title">Services</h4>
-      <ul class="footer__services-list">
-        <li class="services-list__item">Planning</li>
-        <li class="services-list__item">Financing</li>
-        <li class="services-list__item">Purchasing</li>
-        <li class="services-list__item">Meeting</li>
-        <li class="services-list__item">Flying</li>
-      </ul>
-    </div>
-    <div class="footer__continents">
-      <h4 class="continents__title">Continents</h4>
-      <ul class="footer__continents-list">
-        <li class="continents-list__item">North America</li>
-        <li class="continents-list__item">South America</li>
-        <li class="continents-list__item">Asia</li>
-        <li class="continents-list__item">Africa</li>
-        <li class="continents-list__item">Europe</li>
-        <li class="continents-list__item">Australia</li>
-      </ul>
-    </div>
-    <div class="footer__contact">
-      <h4 class="contact__title">Contact</h4>
-      <ul class="footer__contact-list">
-        <li class="contact-list__item">
-          <a href="mailto:travelulu@website.com" class="contact-list__mail">travelulu@website.com</a>
-        </li>
-        <li class="contact-list__item">
-          <p class="contact-list__address">
-            22 Street Address,
-            Suburb Address
-            Main City, PO BOX
-            Country
+    <main class="main-container">
+      <section class="deal-finder">
+        <h2 class="deal-finder__title">
+          Find deals on hotels, homes and much more...
+        </h2>
+        <form class="form deal-form">
+          <input
+            type="text"
+            class="deal-form__input deal-form__input--destination placeholder="
+            placeholder="Where are you going?"
+          />
+          <input
+            type="text"
+            class="deal-form__input deal-form__input--dates"
+            placeholder="Check-in - Check-out"
+          />
+          <input
+            type="text"
+            class="deal-form__input deal-form__input--guests"
+            placeholder="2 adults - 0 children"
+          />
+          <button type="submit" class="button form__button">Search</button>
+        </form>
+      </section>
+      <section class="deal-search">
+        <aside class="search-menu">
+          <section class="travel travel-search">
+            <h2 class="travel-search__title">Search</h2>
+            <form class="form travel-form">
+              <label
+                for="destination"
+                class="travel-form__title travel-form__title--destination"
+                >Destination/property name</label
+              >
+              <div class="travel-form__entire-input">
+                <img
+                  class="travel-form__icon travel-form__icon--search"
+                  src="images/Search.png"
+                  alt="search icon"
+                />
+                <input
+                  type="text"
+                  id="destination"
+                  class="travel-form__input travel-form__input--destination"
+                  placeholder="Gold Coast"
+                />
+                <img
+                  class="travel-form__dropdown"
+                  src="images/Forward.png"
+                  alt="Forward icon"
+                />
+              </div>
+              <label
+                for="check-in-date"
+                class="travel-form__title travel-form__title--check-in-date"
+                >Check-in date</label
+              >
+              <div class="travel-form__entire-input">
+                <img
+                  class="travel-form__icon travel-form__icon--search"
+                  src="images/Calandar.png"
+                  alt="search icon"
+                />
+                <input
+                  id="check-in-date"
+                  class="travel-form__input travel-form__input--check-in-date"
+                  placeholder="Check-in date"
+                />
+                <img
+                  class="travel-form__dropdown"
+                  src="images/Forward.png"
+                  alt="Forward icon"
+                />
+              </div>
+              <label
+                for="check-out-date"
+                class="travel-form__title travel-form__title--check-out-date"
+                >Check-out date</label
+              >
+              <div class="travel-form__entire-input">
+                <img
+                  class="travel-form__icon travel-form__icon--search"
+                  src="images/Calandar.png"
+                  alt="search icon"
+                />
+                <input
+                  id="check-out-date"
+                  class="travel-form__input travel-form__input--check-out-date"
+                  placeholder="Check-out date"
+                />
+                <img
+                  class="travel-form__dropdown"
+                  src="images/Forward.png"
+                  alt="Forward icon"
+                />
+              </div>
+              <label
+                for="travellers"
+                class="travel-form__title travel-form__title--travellers"
+                >Travellers</label
+              >
+              <div class="travel-form__entire-input">
+                <img
+                  class="travel-form__icon travel-form__icon--search"
+                  src="images/Profile.png"
+                  alt="search icon"
+                />
+                <input
+                  type="number"
+                  id="travellers"
+                  class="travel-form__input travel-form__input--travellers"
+                  placeholder="2 adults - 0 children"
+                />
+                <img
+                  class="travel-form__dropdown"
+                  src="images/Forward.png"
+                  alt="Forward icon"
+                />
+              </div>
+              <button
+                type="submit"
+                class="button form__button travel-form__button"
+              >
+                Search
+              </button>
+            </form>
+          </section>
+        </aside>
+        <section class="search-results">
+          <h3 class="search-results__title">254 Properties Found</h3>
+          <article class="search-result first-result">
+            <ul class="search-result__images">
+              <li class="search-result__image">
+                <img
+                  src="images/house-1.png"
+                  alt="Modern looking white house with small garden"
+                />
+              </li>
+              <li class="search-result__image">
+                <img
+                  src="images/house-1.png"
+                  alt="Modern looking white house with small garden"
+                />
+              </li>
+            </ul>
+            <div class="search-result__right-column">
+              <div style="position: relative; width: fit-content">
+                <ul class="search-result__stars">
+                  <li class="search-result__star">
+                    <i class="fa-regular fa-star"></i>
+                  </li>
+                  <li class="search-result__star">
+                    <i class="fa-regular fa-star"></i>
+                  </li>
+                  <li class="search-result__star">
+                    <i class="fa-regular fa-star"></i>
+                  </li>
+                  <li class="search-result__star">
+                    <i class="fa-regular fa-star"></i>
+                  </li>
+                  <li class="search-result__star">
+                    <i class="fa-regular fa-star"></i>
+                  </li>
+                </ul>
+              </div>
+              <h4 class="search-result__title">Estate de la Newcastle</h4>
+              <p class="search-result__location">
+                Newcastle City Centre. Newcastle upon Tyne 0.1km from centre
+              </p>
+              <div>
+                <a href="" class="search-result__map-link"
+                  ><i
+                    class="fa-solid fa-location-dot search-result__location-icon"
+                  ></i
+                  >Show on map</a
+                >
+              </div>
+              <p class="search-result__description">
+                Situated in Newcastle City Centre, Maldron Hotel features free
+                WiFi and a private court yard.
+              </p>
+            </div>
+            <button class="button search-result__button" type="submit">
+              Make a booking
+            </button>
+          </article>
+
+          <article class="search-result second-result">
+            <ul class="search-result__images">
+              <li class="search-result__image">
+                <img
+                  src="images/house-2.png"
+                  alt="Modern looking white house with small garden"
+                />
+              </li>
+              <li class="search-result__image">
+                <img
+                  src="images/house-1.png"
+                  alt="Modern looking white house with small garden"
+                />
+              </li>
+            </ul>
+            <div class="search-result__right-column">
+              <div style="position: relative; width: fit-content">
+                <ul class="search-result__stars">
+                  <li class="search-result__star">
+                    <i class="fa-regular fa-star"></i>
+                  </li>
+                  <li class="search-result__star">
+                    <i class="fa-regular fa-star"></i>
+                  </li>
+                  <li class="search-result__star">
+                    <i class="fa-regular fa-star"></i>
+                  </li>
+                  <li class="search-result__star">
+                    <i class="fa-regular fa-star"></i>
+                  </li>
+                  <li class="search-result__star">
+                    <i class="fa-regular fa-star"></i>
+                  </li>
+                </ul>
+              </div>
+              <h4 class="search-result__title">Estate de la Newcastle</h4>
+              <p class="search-result__location">
+                Newcastle City Centre. Newcastle upon Tyne 0.1km from centre
+              </p>
+              <div>
+                <a href="" class="search-result__map-link"
+                  ><i
+                    class="fa-solid fa-location-dot search-result__location-icon"
+                  ></i
+                  >Show on map</a
+                >
+              </div>
+              <p class="search-result__description">
+                Situated in Newcastle City Centre, Maldron Hotel features free
+                WiFi and a private court yard.
+              </p>
+            </div>
+            <button class="button search-result__button" type="submit">
+              Make a booking
+            </button>
+          </article>
+
+          <article class="search-result third-result">
+            <ul class="search-result__images">
+              <li class="search-result__image">
+                <img
+                  src="images/house-3.png"
+                  alt="Modern looking white house with small garden"
+                />
+              </li>
+              <li class="search-result__image">
+                <img
+                  src="images/house-1.png"
+                  alt="Modern looking white house with small garden"
+                />
+              </li>
+            </ul>
+            <div class="search-result__right-column">
+              <div style="position: relative; width: fit-content">
+                <ul class="search-result__stars">
+                  <li class="search-result__star">
+                    <i class="fa-regular fa-star"></i>
+                  </li>
+                  <li class="search-result__star">
+                    <i class="fa-regular fa-star"></i>
+                  </li>
+                  <li class="search-result__star">
+                    <i class="fa-regular fa-star"></i>
+                  </li>
+                  <li class="search-result__star">
+                    <i class="fa-regular fa-star"></i>
+                  </li>
+                  <li class="search-result__star">
+                    <i class="fa-regular fa-star"></i>
+                  </li>
+                </ul>
+              </div>
+              <h4 class="search-result__title">Estate de la Newcastle</h4>
+              <p class="search-result__location">
+                Newcastle City Centre. Newcastle upon Tyne 0.1km from centre
+              </p>
+              <div>
+                <a href="" class="search-result__map-link"
+                  ><i
+                    class="fa-solid fa-location-dot search-result__location-icon"
+                  ></i
+                  >Show on map</a
+                >
+              </div>
+              <p class="search-result__description">
+                Situated in Newcastle City Centre, Maldron Hotel features free
+                WiFi and a private court yard.
+              </p>
+            </div>
+            <button class="button search-result__button" type="submit">
+              Make a booking
+            </button>
+          </article>
+
+          <article class="search-result fourth-result">
+            <ul class="search-result__images">
+              <li class="search-result__image">
+                <img
+                  src="images/house-4.png"
+                  alt="Modern looking white house with small garden"
+                />
+              </li>
+              <li class="search-result__image">
+                <img
+                  src="images/house-1.png"
+                  alt="Modern looking white house with small garden"
+                />
+              </li>
+            </ul>
+            <div class="search-result__right-column">
+              <div style="position: relative; width: fit-content">
+                <ul class="search-result__stars">
+                  <li class="search-result__star">
+                    <i class="fa-regular fa-star"></i>
+                  </li>
+                  <li class="search-result__star">
+                    <i class="fa-regular fa-star"></i>
+                  </li>
+                  <li class="search-result__star">
+                    <i class="fa-regular fa-star"></i>
+                  </li>
+                  <li class="search-result__star">
+                    <i class="fa-regular fa-star"></i>
+                  </li>
+                  <li class="search-result__star">
+                    <i class="fa-regular fa-star"></i>
+                  </li>
+                </ul>
+              </div>
+              <h4 class="search-result__title">Estate de la Newcastle</h4>
+              <p class="search-result__location">
+                Newcastle City Centre. Newcastle upon Tyne 0.1km from centre
+              </p>
+              <div>
+                <a href="" class="search-result__map-link"
+                  ><i
+                    class="fa-solid fa-location-dot search-result__location-icon"
+                  ></i
+                  >Show on map</a
+                >
+              </div>
+              <p class="search-result__description">
+                Situated in Newcastle City Centre, Maldron Hotel features free
+                WiFi and a private court yard.
+              </p>
+            </div>
+            <button class="button search-result__button" type="submit">
+              Make a booking
+            </button>
+          </article>
+        </section>
+        <div class="load-page-contain">
+          <div class="search-results__load-page">
+            <i class="fa-solid fa-angle-down load-page__icon"></i>
+          </div>
+        </div>
+      </section>
+      <section class="alert">
+        <div class="alert__benefit">
+          <i
+            class="fa-regular fa-thumbs-up alert__icon alert__icon--special"
+          ></i>
+          <p>
+            Lock in a great price for your upcoming stay. Get instant
+            confirmation with FREE cancellation on most rooms!
           </p>
-        </li>
-        <li class="contact-list__item">08 888 8888</li>
-      </ul>
-    </div>
+          <i class="fa-solid fa-xmark alert__icon"></i>
+        </div>
+        <div class="alert__detriment">
+          <i
+            class="fa-solid fa-exclamation alert__icon alert__icon--special"
+          ></i>
+          <p>
+            From 6 April 2022, your chosen cancellation policy will aply,
+            regardless of Coronavirus. We recommend booking a free cancellation
+            option in case your travel plans need to change.
+          </p>
+          <i class="fa-solid fa-xmark alert__icon"></i>
+        </div>
+      </section>
+      <section class="advertisement">
+        <p class="advertisement__title">
+          Need more information to get started?
+        </p>
+        <a href="" class="button advertisement__button">Contact us</a>
+      </section>
+    </main>
 
-
-  </footer>
-</body>
-
+    <footer class="footer">
+      <div class="footer__description">
+        <h3 class="footer__title">Travelulu</h3>
+        <p class="footer__description-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Et minima
+          error repellat soluta voluptate, voluptas enim explicabo blanditiis,
+          vel eligendi eaque recusandae reiciendis fuga id voluptatibus eius
+          quam aperiam autem?
+        </p>
+        <span class="footer__copyright"
+          >Copyright 2021. All rigthts reserved.</span
+        >
+      </div>
+      <div class="footer__services">
+        <h4 class="services__title">Services</h4>
+        <ul class="footer__services-list">
+          <li class="services-list__item">Planning</li>
+          <li class="services-list__item">Financing</li>
+          <li class="services-list__item">Purchasing</li>
+          <li class="services-list__item">Meeting</li>
+          <li class="services-list__item">Flying</li>
+        </ul>
+      </div>
+      <div class="footer__continents">
+        <h4 class="continents__title">Continents</h4>
+        <ul class="footer__continents-list">
+          <li class="continents-list__item">North America</li>
+          <li class="continents-list__item">South America</li>
+          <li class="continents-list__item">Asia</li>
+          <li class="continents-list__item">Africa</li>
+          <li class="continents-list__item">Europe</li>
+          <li class="continents-list__item">Australia</li>
+        </ul>
+      </div>
+      <div class="footer__contact">
+        <h4 class="contact__title">Contact</h4>
+        <ul class="footer__contact-list">
+          <li class="contact-list__item">
+            <a href="mailto:travelulu@website.com" class="contact-list__mail"
+              >travelulu@website.com</a
+            >
+          </li>
+          <li class="contact-list__item">
+            <p class="contact-list__address">
+              22 Street Address, Suburb Address Main City, PO BOX Country
+            </p>
+          </li>
+          <li class="contact-list__item">08 888 8888</li>
+        </ul>
+      </div>
+    </footer>
+  </body>
 </html>

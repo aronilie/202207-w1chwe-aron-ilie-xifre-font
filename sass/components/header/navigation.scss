@@ -1,0 +1,13 @@
+@use "../../variables/colors";
+
+.navigation {
+  width: 100vw;
+  background-color: colors.$primary-color;
+  display: flex;
+  flex-direction: column;
+
+  &__link,
+  &__sublink {
+    list-style: none;
+  }
+}

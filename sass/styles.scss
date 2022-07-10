@@ -3,6 +3,7 @@
 @use "./components/global-styles/buttons";
 @use "./components/header/header";
 @use "./components/header/burger-menu";
+@use "./components/header/navigation.scss";
 @use "./components/search-results/travel-form";
 @use "./components/search-results/search-results";
 @use "./components/search-results/rating-stars-display";
