@@ -9,7 +9,6 @@
     position: fixed;
     top: 100;
     left: 0;
-
     width: 100vw;
     height: 100vh;
     background-color: colors.$navigation-color;
@@ -46,6 +45,7 @@
 
   &__link:hover {
     background-color: colors.$primary-color;
+    position: relative;
   }
 
   // &__sublink {
