@@ -1,7 +1,24 @@
+// @use "../../mixins/burger-menu-bars";
+
 .navigation__menu {
   display: none;
 }
 
 #header__click:checked ~ .navigation__menu {
-  display: flex;
+  display: block;
 }
+
+// #header__click:checked ~ .navigation__icon {
+//   display: block;
+//   &::after {
+//     content: "";
+//     transform: rotateX(90deg);
+//     @include burger-menu-bars.bars(red);
+//   }
+
+//   &::before {
+//     content: "";
+//     transform: rotateX(-90deg);
+//     @include burger-menu-bars.bars(red);
+//   }
+// }
