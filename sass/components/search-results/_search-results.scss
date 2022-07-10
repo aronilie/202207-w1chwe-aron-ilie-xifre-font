@@ -5,22 +5,48 @@
 @use "../../mixins/buttons";
 
 .search-results {
+  margin-top: 2.9em;
+  padding-bottom: 3em;
+  @media (min-width: breakpoints.$desktop) {
+    margin-top: 2em;
+    border: none;
+    padding-bottom: 0;
+  }
   overflow: hidden;
 
+  @include separator.separator();
+
+  &__title {
+    font-size: 1.5em;
+    @media (min-width: breakpoints.$desktop) {
+      font-size: 2em;
+    }
+  }
+
   .search-result {
-    padding: 2.25em 0 2.25em 0;
+    padding: 2.5em 0 2.5em 0;
+    p {
+      margin: 0;
+    }
     &__images {
       list-style: none;
       display: flex;
       gap: 1.25em;
+      margin-bottom: 0.8em;
     }
     &__stars {
-      @include rating-stars.star-list(colors.$highlighted-content-color, 1em);
+      @include rating-stars.star-list(colors.$highlighted-content-color, 1.5em);
+      margin-bottom: 1.3em;
     }
     &__title {
       color: colors.$primary-color;
       font-size: 1.5em;
       font-weight: 700;
+      margin-bottom: 0.2em;
+    }
+
+    &__location {
+      padding-bottom: 0.5em;
     }
 
     &__map-link {
@@ -35,6 +61,10 @@
       -webkit-text-stroke: 1px colors.$primary-color;
       -webkit-text-fill-color: transparent;
       transform: scaleY(0.85);
+    }
+    &__description {
+      padding-top: 0.5em;
+      padding-bottom: 1.2em;
     }
     &__button {
       @include buttons.outline-button(colors.$primary-color);
@@ -59,8 +89,6 @@
         right: 0;
       }
     }
-
-    @include separator.separator();
   }
 
   &__load-page {

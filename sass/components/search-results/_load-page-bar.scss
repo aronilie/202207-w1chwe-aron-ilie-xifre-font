@@ -2,11 +2,13 @@
 @use "../../variables/breakpoints";
 
 .load-page__icon {
+  font-size: 1.7em;
+  line-height: 0;
   border-radius: 50%;
   border: 2px solid colors.$primary-color;
   color: colors.$primary-color;
-  height: 3.37em;
-  width: 3.37em;
+  height: 2.5em;
+  width: 2.5em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,8 +16,8 @@
 }
 
 .load-page-contain {
-  height: 3.37em;
-  width: 30%;
+  height: 2.5em;
+  width: 35%;
   background-color: colors.$background-color;
   display: flex;
   justify-content: center;

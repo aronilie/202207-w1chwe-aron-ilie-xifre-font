@@ -1,6 +1,6 @@
 @mixin alert($color, $background-color) {
   margin: 2em;
-  border: 0.3em solid $color;
+  border: 0.21em solid $color;
   border-radius: 1em;
   background-color: $background-color;
   color: $color;

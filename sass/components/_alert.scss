@@ -1,7 +1,12 @@
 @use "../variables/colors";
+@use "../variables/breakpoints";
 @use "../mixins/alerts";
 
 .alert {
+  padding-top: 3.5em;
+  @media (min-width: breakpoints.$desktop) {
+    padding-top: 0;
+  }
   &__benefit {
     @include alerts.alert(
       colors.$benefit-alert-color,
@@ -21,9 +26,10 @@
   &__icon {
     color: colors.$typography-color;
     margin: 1em;
-    font-size: 1.7em;
+    font-size: 1.2em;
 
     &--special {
+      font-size: 1.7em;
       align-self: flex-start;
     }
   }
