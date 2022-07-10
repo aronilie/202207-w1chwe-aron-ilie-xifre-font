@@ -1,4 +1,4 @@
-// @use "../../mixins/burger-menu-bars";
+@use "../../mixins/burger-menu-bars";
 
 .navigation__menu {
   display: none;
@@ -8,17 +8,42 @@
   display: block;
 }
 
-// #header__click:checked ~ .navigation__icon {
-//   display: block;
+// #header__click:checked + .navigation__icon {
 //   &::after {
-//     content: "";
-//     transform: rotateX(90deg);
-//     @include burger-menu-bars.bars(red);
-//   }
-
-//   &::before {
-//     content: "";
-//     transform: rotateX(-90deg);
-//     @include burger-menu-bars.bars(red);
+//     content: "Travelulu";
+//     display: flex;
+//     align-items: center;
+//     width: 100%;
+//     color: white;
+//     height: 100%;
+//     background: #3643a2;
+//     position: absolute;
+//     top: 0;
+//     left: 0;
 //   }
 // }
+
+.navigation__sublink:active,
+.navigation__sublink:focus,
+.navigation__sublink:hover > * {
+  display: flex;
+}
+
+.navigation__icon {
+  transition: 0.4s;
+}
+
+#header__click:checked + .navigation__icon {
+  transform: rotate(180deg);
+  bottom: 2;
+
+  &::after {
+    content: "";
+    transform: rotate(90deg) scaleX(0.8);
+  }
+
+  &::before {
+    content: "";
+    transform: rotate(-540deg);
+  }
+}
