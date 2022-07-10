@@ -5,36 +5,42 @@
 @use "../../mixins/buttons";
 
 .search-results {
-  margin-top: 2.9em;
+  @include separator.separator();
   padding-bottom: 3em;
   @media (min-width: breakpoints.$desktop) {
-    margin-top: 2em;
     border: none;
     padding-bottom: 0;
     padding-left: 2.3em;
   }
   overflow: hidden;
 
-  @include separator.separator();
-
   &__title {
+    margin-top: 1.1em;
     font-size: 1.5em;
     @media (min-width: breakpoints.$desktop) {
       font-size: 2em;
+      margin-top: 0;
     }
   }
 
   .search-result {
+    @include separator.separator();
     padding: 2.5em 0 2.5em 0;
     p {
       margin: 0;
     }
     &__images {
+      margin-bottom: 1em;
       list-style: none;
       display: flex;
       gap: 1.25em;
       overflow-x: scroll;
+      @media (min-width: breakpoints.$desktop) {
+        overflow-x: inherit;
+        margin-bottom: 0;
+      }
     }
+
     &__images::-webkit-scrollbar {
       display: none;
       margin-bottom: 0.8em;
@@ -74,6 +80,13 @@
     &__button {
       @include buttons.outline-button(colors.$primary-color);
     }
+    &:last-child {
+      padding-bottom: 3.5em;
+      border: none;
+      @media (min-width: breakpoints.$desktop) {
+        padding-bottom: 0.5em;
+      }
+    }
     @media (min-width: breakpoints.$desktop) {
       display: flex;
 
@@ -103,7 +116,9 @@
 }
 
 .deal-search {
+  margin-top: 2.9em;
   @media (min-width: breakpoints.$desktop) {
+    margin-top: 2em;
     display: flex;
     .search-menu {
       flex: 1;

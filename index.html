@@ -28,36 +28,35 @@
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
 
-  <body>
-    <header class="header">
-      <h1 class="header__title">Travelulu</h1>
-      <nav class="header__navigation">
-        <div class="navigation">
-          <ul class="navigation__links">
-            <li class="navigation__link">Home</li>
-            <li class="navigation__link navigation__link--unfold">
-              Services
-              <ul class="navigation__sublinks">
-                <li class="navigation__sublink">Planning</li>
-                <li class="navigation__sublink">Financing</li>
-                <li class="navigation__sublink">Purchasing</li>
-                <li class="navigation__sublink">Reviewing</li>
-                <li class="navigation__sublink">Flying</li>
-              </ul>
-            </li>
-            <li class="navigation__link navigation__link--unfold">
-              Continents
-              <ul class="navigation__sublinks">
-                <li class="navigation__sublink">Coca-cola</li>
-              </ul>
-            </li>
-            <li class="navigation__link">Contact</li>
-            <li class="navigation__link">Privacy</li>
+<body>
+  <header class="header">
+    <h1 class="header__title">Travelulu</h1>
+    <nav class="header__navigation">
+      <input type="checkbox" id="header__click" style="display: none;" class="navigation"></input>
+      <label for="header__click" class="navigation__icon"></label>
+      <ul class="navigation__menu">
+        <li class="navigation__link">Home</li>
+        <li class="navigation__link navigation__link--unfold">Services
+          <ul>
+            <li class="navigation__sublink">Planning</li>
+            <li class="navigation__sublink">Financing</li>
+            <li class="navigation__sublink">Purchasing</li>
+            <li class="navigation__sublink">Reviewing</li>
+            <li class="navigation__sublink">Flying</li>
           </ul>
-        </div>
-      </nav>
-    </header>
-
+        </li>
+        <li class="navigation__link navigation__link--unfold">
+          Continents
+          <ul>
+            <li class="navigation__sublink">Coca-cola</li>
+          </ul>
+        </li>
+        <li class="navigation__link">Contact</li>
+        <li class="navigation__link">Privacy</li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container">
     <main class="main-container">
       <section class="deal-finder">
         <h2 class="deal-finder__title">
@@ -191,16 +190,10 @@
           <article class="search-result first-result">
             <ul class="search-result__images">
               <li class="search-result__image">
-                <img
-                  src="images/house-1.png"
-                  alt="Modern looking white house with small garden"
-                />
+                <img src="images/house-1.png" alt="Modern looking white house with small garden" />
               </li>
               <li class="search-result__image">
-                <img
-                  src="images/house-1.png"
-                  alt="Modern looking white house with small garden"
-                />
+                <img src="images/house-1.png" alt="Modern looking white house with small garden" />
               </li>
             </ul>
             <div class="search-result__right-column">
@@ -228,12 +221,8 @@
                 Newcastle City Centre. Newcastle upon Tyne 0.1km from centre
               </p>
               <div>
-                <a href="" class="search-result__map-link"
-                  ><i
-                    class="fa-solid fa-location-dot search-result__location-icon"
-                  ></i
-                  >Show on map</a
-                >
+                <a href="" class="search-result__map-link"><i
+                    class="fa-solid fa-location-dot search-result__location-icon"></i>Show on map</a>
               </div>
               <p class="search-result__description">
                 Situated in Newcastle City Centre, Maldron Hotel features free
@@ -248,16 +237,10 @@
           <article class="search-result second-result">
             <ul class="search-result__images">
               <li class="search-result__image">
-                <img
-                  src="images/house-2.png"
-                  alt="Modern looking white house with small garden"
-                />
+                <img src="images/house-2.png" alt="Modern looking white house with small garden" />
               </li>
               <li class="search-result__image">
-                <img
-                  src="images/house-1.png"
-                  alt="Modern looking white house with small garden"
-                />
+                <img src="images/house-1.png" alt="Modern looking white house with small garden" />
               </li>
             </ul>
             <div class="search-result__right-column">
@@ -285,12 +268,8 @@
                 Newcastle City Centre. Newcastle upon Tyne 0.1km from centre
               </p>
               <div>
-                <a href="" class="search-result__map-link"
-                  ><i
-                    class="fa-solid fa-location-dot search-result__location-icon"
-                  ></i
-                  >Show on map</a
-                >
+                <a href="" class="search-result__map-link"><i
+                    class="fa-solid fa-location-dot search-result__location-icon"></i>Show on map</a>
               </div>
               <p class="search-result__description">
                 Situated in Newcastle City Centre, Maldron Hotel features free
@@ -305,16 +284,10 @@
           <article class="search-result third-result">
             <ul class="search-result__images">
               <li class="search-result__image">
-                <img
-                  src="images/house-3.png"
-                  alt="Modern looking white house with small garden"
-                />
+                <img src="images/house-3.png" alt="Modern looking white house with small garden" />
               </li>
               <li class="search-result__image">
-                <img
-                  src="images/house-1.png"
-                  alt="Modern looking white house with small garden"
-                />
+                <img src="images/house-1.png" alt="Modern looking white house with small garden" />
               </li>
             </ul>
             <div class="search-result__right-column">
@@ -362,16 +335,10 @@
           <article class="search-result fourth-result">
             <ul class="search-result__images">
               <li class="search-result__image">
-                <img
-                  src="images/house-4.png"
-                  alt="Modern looking white house with small garden"
-                />
+                <img src="images/house-4.png" alt="Modern looking white house with small garden" />
               </li>
               <li class="search-result__image">
-                <img
-                  src="images/house-1.png"
-                  alt="Modern looking white house with small garden"
-                />
+                <img src="images/house-1.png" alt="Modern looking white house with small garden" />
               </li>
             </ul>
             <div class="search-result__right-column">
@@ -491,18 +458,21 @@
         <h4 class="contact__title">Contact</h4>
         <ul class="footer__contact-list">
           <li class="contact-list__item">
-            <a href="mailto:travelulu@website.com" class="contact-list__mail"
-              >travelulu@website.com</a
-            >
+            <a href="mailto:travelulu@website.com" class="contact-list__mail">travelulu@website.com</a>
           </li>
           <li class="contact-list__item">
             <p class="contact-list__address">
-              22 Street Address, Suburb Address Main City, PO BOX Country
+              22 Street Address,
+              Suburb Address
+              Main City, PO BOX
+              Country
             </p>
           </li>
           <li class="contact-list__item">08 888 8888</li>
         </ul>
       </div>
     </footer>
-  </body>
+  </div>
+</body>
+
 </html>
