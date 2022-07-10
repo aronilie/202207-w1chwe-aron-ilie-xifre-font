@@ -1,12 +1,8 @@
 @use "../../variables/colors";
 
-// .header {
-//   &__navigation {
-//     position: absolute;
-//     top: 0;
-//     display: flex;
-//   }
-// }
+.sublink-menu {
+  display: none;
+}
 
 .navigation {
   &__menu {
@@ -19,17 +15,23 @@
     background-color: colors.$navigation-color;
     display: flex;
     padding: 2em 0em;
-    color: #fff;
+    color: colors.$background-color;
     font-weight: 600;
   }
+  &__sublink {
+    color: colors.$background-color;
+    font-weight: 400;
+  }
   &__link::before,
-  &__link--unfold::before {
+  &__link--unfold::before,
+  &__sublink::before {
     font-family: "Font Awesome 5 Free";
     content: "\f105";
     padding: 0 1.5em;
   }
 
-  &__link::before {
+  &__link::before,
+  &__sublink::before {
     color: transparent;
   }
 
@@ -46,13 +48,29 @@
     background-color: colors.$primary-color;
   }
 
-  &__sublink {
-    display: none;
-  }
+  // &__sublink {
+  //   display: none;
+  // }
 
   &__link,
   &__sublink,
-  &__unfold-icons {
+  &__unfold-icons,
+  &__sublink-menu {
     list-style: none;
   }
+}
+
+.navigation__link--unfold:active > *,
+.navigation__link--unfold:focus > *,
+.navigation__link--unfold:hover > * {
+  display: flex !important;
+}
+
+.sublink-menu {
+  gap: 1.5em;
+  flex-direction: column;
+}
+
+.sublink-menu:first-child {
+  margin-top: 1.5em;
 }
