@@ -1,4 +1,5 @@
 @use "../../mixins/burger-menu-bars";
+@use "../../variables/colors";
 
 .navigation__menu {
   display: none;
@@ -7,21 +8,6 @@
 #header__click:checked ~ .navigation__menu {
   display: block;
 }
-
-// #header__click:checked + .navigation__icon {
-//   &::after {
-//     content: "Travelulu";
-//     display: flex;
-//     align-items: center;
-//     width: 100%;
-//     color: white;
-//     height: 100%;
-//     background: #3643a2;
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//   }
-// }
 
 .navigation__sublink:active,
 .navigation__sublink:focus,
@@ -36,14 +22,17 @@
 #header__click:checked + .navigation__icon {
   transform: rotate(180deg);
   bottom: 2;
+  background-color: colors.$background-color;
 
   &::after {
     content: "";
     transform: rotate(90deg) scaleX(0.8);
+    background-color: colors.$background-color;
   }
 
   &::before {
     content: "";
     transform: rotate(-540deg);
+    background-color: colors.$background-color;
   }
 }
