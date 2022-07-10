@@ -2,6 +2,10 @@
 
 .container {
   max-width: 481px;
+  padding-bottom: 4.5em;
+  @media (min-width: breakpoints.$desktop) {
+    padding-bottom: 2em;
+  }
 }
 
 .container,

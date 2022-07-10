@@ -56,9 +56,8 @@
   }
 }
 
-.navigation__link--unfold:active > *,
-.navigation__link--unfold:focus > *,
-.navigation__link--unfold:hover > * {
+.navigation__link--unfold:focus > .sublink-menu,
+.navigation__link--unfold:hover > .sublink-menu {
   display: flex !important;
 }
 
