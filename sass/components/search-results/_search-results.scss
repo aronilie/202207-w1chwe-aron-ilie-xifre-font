@@ -13,6 +13,10 @@
       list-style: none;
       display: flex;
       gap: 1.25em;
+      overflow-x: scroll;
+    }
+    &__images::-webkit-scrollbar {
+      display: none;
     }
     &__stars {
       @include rating-stars.star-list(colors.$highlighted-content-color, 1em);
