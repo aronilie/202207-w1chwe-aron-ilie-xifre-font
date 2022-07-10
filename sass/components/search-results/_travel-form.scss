@@ -19,6 +19,11 @@
   flex-direction: column;
   padding: 2.2em;
 
+  input::placeholder {
+    color: #000000;
+    margin-left: 5em;
+  }
+
   &__input {
     height: 4em;
     border-radius: 1em;
@@ -62,9 +67,4 @@
   &__title {
     color: #fff;
   }
-}
-
-input::placeholder {
-  color: #000000;
-  margin-left: 5em;
 }
