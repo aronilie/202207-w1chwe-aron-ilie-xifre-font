@@ -1,8 +1,13 @@
 @use "../../variables/breakpoints";
 
 .container {
-  padding: 0 1.87em 0 1.87em;
   max-width: 481px;
+}
+
+.container,
+.header {
+  padding-right: 1.87em;
+  padding-left: 1.87em;
   margin-left: auto;
   margin-right: auto;
   @media (min-width: breakpoints.$tablet) {

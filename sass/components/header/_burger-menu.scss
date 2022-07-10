@@ -12,14 +12,12 @@
 
 .navigation__icon::before {
   content: "";
-  position: absolute;
-  top: 8;
+  top: 9;
   @include burger-menu-bars.bars(colors.$primary-color);
 }
 
 .navigation__icon::after {
   content: "";
-  position: absolute;
-  bottom: 8;
+  bottom: 9;
   @include burger-menu-bars.bars(colors.$primary-color);
 }

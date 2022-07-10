@@ -1,0 +1,7 @@
+.navigation__menu {
+  display: none;
+}
+
+#header__click:checked ~ .navigation__menu {
+  display: flex;
+}
