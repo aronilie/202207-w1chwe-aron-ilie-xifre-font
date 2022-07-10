@@ -1,4 +1,4 @@
-@use "../mixins/rating-stars";
+@use "../../mixins/rating-stars";
 
 .first-result .search-result__stars::before {
   @include rating-stars.star-rating(1.6);
