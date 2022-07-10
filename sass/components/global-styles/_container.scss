@@ -1,0 +1,14 @@
+@use "../../variables/breakpoints";
+
+.container {
+  padding: 0 1.87em 0 1.87em;
+  max-width: 481px;
+  margin-left: auto;
+  margin-right: auto;
+  @media (min-width: breakpoints.$tablet) {
+    max-width: 1050px;
+  }
+  @media (min-width: breakpoints.$desktop) {
+    max-width: 1440px;
+  }
+}

@@ -30,12 +30,14 @@
       margin: 0;
     }
     &__images {
+      margin-bottom: 1em;
       list-style: none;
       display: flex;
       gap: 1.25em;
       overflow-x: scroll;
       @media (min-width: breakpoints.$desktop) {
         overflow-x: inherit;
+        margin-bottom: 0;
       }
     }
 
