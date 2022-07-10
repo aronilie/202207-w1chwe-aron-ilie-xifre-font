@@ -13,6 +13,7 @@
       colors.$benefit-alert-background-color
     );
     padding: 1em 0;
+    margin-bottom: 2em;
   }
 
   &__detriment {
@@ -33,4 +34,17 @@
       align-self: flex-start;
     }
   }
+}
+
+.fa-solid.fa-exclamation {
+  margin-right: 20px;
+}
+
+.fa-regular.fa-thumbs-up {
+  margin-right: 7px;
+}
+
+.fa-solid.fa-xmark {
+  margin-left: auto;
+  padding-left: 10px;
 }
