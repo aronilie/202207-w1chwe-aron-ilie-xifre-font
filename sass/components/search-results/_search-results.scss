@@ -1,10 +1,8 @@
-@use "../variables/colors";
-@use "../variables/breakpoints";
-@use "../mixins/separator";
-@use "../mixins/rating-stars";
-@use "../mixins/buttons";
-@use "../partials/rating-stars-display";
-@use "../partials/load-page-bar";
+@use "../../variables/colors";
+@use "../../variables/breakpoints";
+@use "../../mixins/separator";
+@use "../../mixins/rating-stars";
+@use "../../mixins/buttons";
 
 .search-results {
   overflow: hidden;

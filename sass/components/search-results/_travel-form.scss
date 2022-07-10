@@ -1,6 +1,6 @@
-@use "../variables/colors";
-@use "../mixins/inputs";
-@use "../mixins/separator";
+@use "../../variables/colors";
+@use "../../mixins/inputs";
+@use "../../mixins/separator";
 
 .travel-search {
   background-color: colors.$primary-color;
