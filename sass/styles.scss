@@ -4,6 +4,7 @@
 @use "./components/global-styles/container";
 @use "./components/header/header";
 @use "./components/header/burger-menu";
+@use "./components/header/navigation.scss";
 @use "./components/header/burger-menu-active";
 @use "./components/search-results/travel-form";
 @use "./components/search-results/search-results";
